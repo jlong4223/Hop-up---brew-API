@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&display=swap');
 
+:root {
+    --shadow-gray-dark: #989898;
+}
 
 * {
     box-sizing: border-box;
@@ -24,6 +27,23 @@ header, footer {
     color: #74671a;
 }
 
+input {
+    font-size: 20px;
+    font-family: 'Grenze Gotisch', cursive;
+    border-radius: 12px;
+}
+
+/* input:hover {
+    box-shadow: 1px 1px 15px 30px var(--shadow-gray-dark); 
+} */
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
 footer {
     justify-content: center;
     font-family: 'Grenze Gotisch', cursive;
@@ -36,7 +56,7 @@ header {
 }
 
 header > h1 {
-    font-size: 40px;
+    font-size: 43px;
     font-family: 'Grenze Gotisch', cursive;
 }
 
