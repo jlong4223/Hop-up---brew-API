@@ -55,13 +55,20 @@ form {
 footer {
     justify-content: center;
     font-family: 'Grenze Gotisch', cursive;
+    height: 50px;
 }
 
 header {
     justify-content: space-between;
     padding: 0 10px 0 10px;
-    height: 75px;
+    height: 80px;
     box-shadow: 1px 1px 12px 5px #74671a;
+    border-bottom: 5px dotted #74671a;
+}
+
+.bigbeer {
+    width: 0px;
+    height: 0px;
 }
 
 header > h1 {
@@ -70,6 +77,37 @@ header > h1 {
     text-shadow: 1px 1px 8px #808080;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: white;
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+    background-color: #9fa584;
+}
+
+nav li {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 19px;
+    padding: 10px;
+}
+
+nav li a {
+    display: inline-flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Grenze Gotisch', cursive;
+    padding: 3px 15px 3px 15px;
+    border: 1px solid #000000;
+}
 
 main {
     flex-grow: 1;
@@ -99,4 +137,9 @@ main {
 .words {
     text-decoration: underline;
     text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.input {
+    font-family: 'Grenze Gotisch', cursive;
 }
