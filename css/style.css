@@ -44,6 +44,14 @@ form {
     margin-left: 50px;
 }
 
+#btn {
+    box-shadow: 1px 1px 12px 3px #74671a;
+}
+
+#btn:hover {
+    box-shadow: 1px 1px 12px 8px #3e360a;
+}
+
 footer {
     justify-content: center;
     font-family: 'Grenze Gotisch', cursive;
@@ -53,11 +61,13 @@ header {
     justify-content: space-between;
     padding: 0 10px 0 10px;
     height: 75px;
+    box-shadow: 1px 1px 12px 5px #74671a;
 }
 
 header > h1 {
     font-size: 43px;
     font-family: 'Grenze Gotisch', cursive;
+    text-shadow: 1px 1px 8px #808080;
 }
 
 
