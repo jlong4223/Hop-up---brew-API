@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&display=swap');
 
+//font2
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+//font3
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Playfair+Display:ital,wght@1,700&display=swap');
+
+
 :root {
     --shadow-gray-dark: #989898;
 }
@@ -23,13 +31,13 @@ header, footer {
     align-items: center;
     width: 100%;
     height: 65px;
-    background-color: #9fa584;
-    color: #74671a;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 input {
     font-size: 20px;
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Chivo', sans-serif;
     border-radius: 12px;
 }
 
@@ -66,14 +74,14 @@ form {
 
 footer {
     justify-content: center;
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Playfair Display', serif;
     height: 50px;
 }
 
 header {
     justify-content: center;
     padding: 0 10px 0 10px;
-    height: 100px;
+    height: 130px;
     box-shadow: 1px 1px 12px 5px #74671a;
     /* border-bottom: 5px dotted #74671a; */
 }
@@ -84,8 +92,9 @@ header {
 }
 
 header > h1 {
-    font-size: 50px;
-    font-family: 'Grenze Gotisch', cursive;
+    font-size: 65px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
     text-shadow: 1px 1px 8px #808080;
 }
 
@@ -94,11 +103,10 @@ nav {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: white;
     text-decoration: none;
     height: 50px;
     width: 100%;
-    background-color: #9fa584;
+    background-color: #000000;
     border-bottom: 5px dotted #74671a;
 }
 
@@ -116,23 +124,26 @@ nav li a {
     display: inline-flex;
     justify-content: space-between;
     text-decoration: none;
-    color: #000000;
-    font-family: 'Grenze Gotisch', cursive;
+    color: #ffffff;
+    font-family: 'Chivo', sans-serif;
     padding: 3px 15px 3px 15px;
     border: 1px solid #000000;
     box-shadow: 1px 1px 12px 3px #74671a;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 nav li a:hover {
-    box-shadow: 1px 1px 12px 3px #060501;
+    box-shadow: 1px 1px 12px 3px #ffffff;
 }
 
 main {
     flex-grow: 1;
-    /* position: relative; */
     float: right;
     /* border: 5px solid green; */
+    display: column;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #top {
@@ -159,11 +170,11 @@ main {
 .words {
     text-decoration: underline;
     text-align: center;
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Chivo', sans-serif;
 }
 
 .input {
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Chivo', sans-serif;
 
 }
 
@@ -176,6 +187,7 @@ div p {
 
 aside {
     float: left;
+    margin-left: 10px;
 }
 
 #alcohol{
@@ -201,9 +213,17 @@ aside {
 #pairing{
     display: flex;
     justify-content: center;
+    /* border: 5px solid black; */
+    /* width: 65%; */
 }
 
-/* #infodets{
-    display:flex;
-    justify-content: center;
-} */
+#infodets{
+    /* border: 5px solid black; */
+}
+
+/* /* section{
+    /* border: 5px solid green; */
+    margin-left: 400px;
+    margin-right: 200px;
+    margin-top: 100px;
+}   */

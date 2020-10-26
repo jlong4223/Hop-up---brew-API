@@ -22,8 +22,10 @@ https://sandbox-api.brewerydb.com/v2/beer/eVgnFV/?key=203519b93825fa67c097215a92
 https://api.punkapi.com/v2/beers/?beer_name=choco+Libre
 
     //the api changed to reflect the JS function
-https://api.punkapi.com/v2/beers/?beer_name=${searchText}   
+https://api.punkapi.com/v2/beers/?beer_name=${searchText}  
 
+    //the random endpoint
+https://api.punkapi.com/v2/beers/random 
 */
 
 
@@ -40,12 +42,18 @@ function handleGetData(event) {
             `https://api.punkapi.com/v2/beers/?beer_name=${searchText}`
     }).then(
         (data) => {
+            let $beerlogo = $("#beerlogo")
+            // if ($beerlogo.attr(data[0].image_url === null)){
+            //     return $beerlogo.attr("src", "https://image.freepik.com/free-photo/empty-beer-glass-isolated-white_127657-6823.jpg")
+            // } else {
+            //     return ($beerlogo.attr("src", data[0].image_url))
+            // }
             console.log(data);
             $("#beername").text(data[0].name)
             $("#abv").text(data[0].abv + '%')
             $("#description").text(data[0].description)
             $("#pairing").text(data[0].food_pairing)
-            $("#beerlogo").attr("src", data[0].image_url)
+            $beerlogo.attr("src", data[0].image_url); 
         },
         (error) => {
             console.log("bad request: ", error), 

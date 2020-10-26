@@ -15,7 +15,11 @@ A simple web application that displays beer information related to the beer that
 ### Wireframe:
 ![wireframe](./img/wireframe.png)
 ### In the midst:
-![final](./img/in-the-midst.png)
+![midst](./img/in-the-midst.png)
+### Before user input:
+![input](./img/main-screen.png)
+### After Input:
+![inputhere](./img/screen-beer.png)
 
 ## Getting Started
 [Click Here](#) to see the deployed app!
@@ -23,3 +27,4 @@ A simple web application that displays beer information related to the beer that
 ## Future Enchancements
  - the ability to favorite and save beer from local storage
  - connecting to an API with more beers
+ - making a beers default image, the image that I have hard coded in
