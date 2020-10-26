@@ -43,12 +43,13 @@ function handleGetData(event) {
             $("#abv").text(data[0].abv + '%')
             $("#description").text(data[0].description)
             $("#pairing").text(data[0].food_pairing)
+            $("#beerlogo").attr("src", data[0].image_url)
         },
         (error) => {
             console.log("bad request: ", error), 
             alert("Beer name required for search")
-        } 
-    )
+        }, 
+    ) 
 }
 
 
