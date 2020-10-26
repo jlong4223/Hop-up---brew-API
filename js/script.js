@@ -38,8 +38,7 @@ function handleGetData(event) {
     event.preventDefault();
     const searchText = $("#search").val()
     $.ajax({
-        url: 
-            `https://api.punkapi.com/v2/beers/?beer_name=${searchText}`
+        url: `https://api.punkapi.com/v2/beers/?beer_name=${searchText}`
     }).then(
         (data) => {
             let $beerlogo = $("#beerlogo")
@@ -53,28 +52,28 @@ function handleGetData(event) {
             $("#abv").text(data[0].abv + '%')
             $("#description").text(data[0].description)
             $("#pairing").text(data[0].food_pairing)
-            $beerlogo.attr("src", data[0].image_url); 
+            $beerlogo.attr("src", data[0].image_url);
         },
         (error) => {
-            console.log("bad request: ", error), 
-            alert("Beer name required for search")
-        }, 
-    ) 
+            console.log("bad request: ", error),
+                alert("Beer name required for search")
+        },
+    )
 }
 
 function randomize() {
     event.preventDefault();
-    $.ajax ({
+    $.ajax({
         url: `https://api.punkapi.com/v2/beers/random`
     }).then(
-       (data) => {
-        console.log(data);
-        $("#beername").text(data[0].name)
-        $("#abv").text(data[0].abv + '%')
-        $("#description").text(data[0].description)
-        $("#pairing").text(data[0].food_pairing)
-        $("#beerlogo").attr("src", data[0].image_url)
-       }
+        (data) => {
+            console.log(data);
+            $("#beername").text(data[0].name)
+            $("#abv").text(data[0].abv + '%')
+            $("#description").text(data[0].description)
+            $("#pairing").text(data[0].food_pairing)
+            $("#beerlogo").attr("src", data[0].image_url)
+        }
     )
 }
 

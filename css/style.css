@@ -19,14 +19,16 @@
     margin: 0;
 }
 
-body{
-    background-color: white;;
+body {
+    background-color: white;
+    ;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-header, footer {
+header,
+footer {
     display: flex;
     align-items: center;
     width: 100%;
@@ -36,14 +38,10 @@ header, footer {
 }
 
 input {
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Chivo', sans-serif;
     border-radius: 12px;
 }
-
-/* input:hover {
-    box-shadow: 1px 1px 15px 30px var(--shadow-gray-dark); 
-} */
 
 form {
     display: flex;
@@ -52,23 +50,17 @@ form {
     margin-left: 50px;
 }
 
-#mainsearch{
+#mainsearch {
     margin-top: 100px;
 }
 
-#btn {
-    box-shadow: 1px 1px 12px 3px #74671a;
-}
-
-#btn:hover {
-    box-shadow: 1px 1px 12px 8px #3e360a;
-}
-
+#btn,
 #randombtn {
     box-shadow: 1px 1px 12px 3px #74671a;
 }
 
-#randombtn:hover{
+#btn:hover,
+#randombtn:hover {
     box-shadow: 1px 1px 12px 8px #3e360a;
 }
 
@@ -86,12 +78,7 @@ header {
     /* border-bottom: 5px dotted #74671a; */
 }
 
-.bigbeer {
-    width: 0px;
-    height: 0px;
-}
-
-header > h1 {
+header>h1 {
     font-size: 65px;
     font-family: 'Playfair Display', serif;
     font-style: italic;
@@ -116,7 +103,7 @@ nav li {
     align-items: center;
     text-decoration: none;
     display: inline;
-    font-size: 19px;
+    font-size: 22px;
     padding: 10px;
 }
 
@@ -138,7 +125,7 @@ nav li a:hover {
 
 main {
     flex-grow: 1;
-    float: right;
+    /* float: right; */
     /* border: 5px solid green; */
     display: column;
     align-items: center;
@@ -188,9 +175,10 @@ div p {
 aside {
     float: left;
     margin-left: 10px;
+    margin-right: 50px
 }
 
-#alcohol{
+#alcohol {
     display: column;
     justify-content: center;
     margin-bottom: 25px;
@@ -201,29 +189,26 @@ aside {
     justify-content: center;
 }
 
-#topname{
+#topname {
     display: column;
 }
 
-#beername{
+#beername {
     display: flex;
     justify-content: center;
 }
 
-#pairing{
+#pairing {
     display: flex;
     justify-content: center;
     /* border: 5px solid black; */
     /* width: 65%; */
 }
 
-#infodets{
+#infodets {
     /* border: 5px solid black; */
 }
 
-/* /* section{
-    /* border: 5px solid green; */
-    margin-left: 400px;
-    margin-right: 200px;
-    margin-top: 100px;
-}   */
+section {
+    margin-right: 50px;
+}
