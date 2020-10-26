@@ -18,7 +18,11 @@ https://sandbox-api.brewerydb.com/v2/beer/eVgnFV/?key=203519b93825fa67c097215a92
 */
 
 /* API number 2
+    //with beer name that I used to test data in the console
+https://api.punkapi.com/v2/beers/?beer_name=choco+Libre
 
+    //the api changed to reflect the JS function
+https://api.punkapi.com/v2/beers/?beer_name=${searchText}   
 
 */
 
@@ -31,7 +35,7 @@ function handleGetData(event) {
     const searchText = $("#search").val()
     $.ajax({
         url: 
-            `https://api.punkapi.com/v2/beers/?beer_name=choco+Libre`
+            `https://api.punkapi.com/v2/beers/?beer_name=${searchText}`
     }).then(
         (data) => {
             console.log(data);
@@ -42,7 +46,7 @@ function handleGetData(event) {
         },
         (error) => {
             console.log("bad request: ", error), 
-            alert("bad request")
+            alert("Beer name required for search")
         } 
     )
 }
