@@ -87,6 +87,7 @@ nav {
     height: 50px;
     width: 100%;
     background-color: #9fa584;
+    
 }
 
 nav li {
@@ -107,6 +108,12 @@ nav li a {
     font-family: 'Grenze Gotisch', cursive;
     padding: 3px 15px 3px 15px;
     border: 1px solid #000000;
+    box-shadow: 1px 1px 12px 3px #74671a;
+    border-radius: 12px;
+}
+
+nav li a:hover {
+    box-shadow: 1px 1px 12px 3px #060501;
 }
 
 main {
@@ -142,4 +149,9 @@ main {
 
 .input {
     font-family: 'Grenze Gotisch', cursive;
+}
+
+div p {
+    color: white;
+    font-size: 25px;
 }
