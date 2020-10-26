@@ -12,8 +12,10 @@ A simple web application that displays beer information related to the beer that
 - Beer API
 
 ## Screenshots
+### Wireframe:
 ![wireframe](./img/wireframe.png)
-![final](#)
+### In the midst:
+![final](./img/in-the-midst.png)
 
 ## Getting Started
 [Click Here](#) to see the deployed app!
