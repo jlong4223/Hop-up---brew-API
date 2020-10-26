@@ -136,7 +136,7 @@ main {
 }
 
 #top {
-    display: flex;
+    display: column;
     justify-content: center;
     margin-top: 140px;
     height: 100px;
@@ -145,13 +145,13 @@ main {
 
 #middle {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     /* margin: 0 25px 0 25px; */
 }
 
 #bottom {
     margin-top: 70px;
-    display: flex;
+    display: column;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -179,6 +179,26 @@ aside {
 }
 
 #alcohol{
+    display: column;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#abv {
+    display: flex;
+    justify-content: center;
+}
+
+#topname{
+    display: column;
+}
+
+#beername{
+    display: flex;
+    justify-content: center;
+}
+
+#pairing{
     display: flex;
     justify-content: center;
 }
