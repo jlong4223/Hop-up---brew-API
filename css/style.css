@@ -41,6 +41,7 @@ form {
     justify-content: center;
     margin-bottom: 40px;
     margin-left: 50px;
+    margin-top: 0
 }
 
 #mainsearch {
@@ -114,7 +115,7 @@ main {
 #top {
     display: column;
     justify-content: center;
-    margin-top: 140px;
+    margin-top: 180px;
     height: 100px;
 }
 
@@ -145,13 +146,23 @@ div p {
     color: black;
     font-size: 25px;
 }
-
+/* recently changed below */
 aside {
     float: left;
+    margin-top: 60px;
     margin-left: 10px;
-    margin-right: 50px;
+    margin-right: 10px;
+    position: relative;
+    width: 530px;
+    /* height: 930px; */
+
 }
 
+#beerlogo {
+    height: 790px; 
+    margin-left: 30px;
+}
+/* recently changed above */
 #alcohol {
     display: column;
     justify-content: center;
@@ -172,5 +183,5 @@ aside {
 }
 
 section {
-    margin-right: 50px;
+    margin-right: 100px;
 }
