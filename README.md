@@ -29,4 +29,8 @@ A simple web application that displays beer information related to the beer that
  - connecting to an API with more beers
  - having a sound for the randomize button
  - having the text stay stationary when an image may be a different size
+<<<<<<< HEAD
  - alert the user if a beer is not found
+=======
+ - alert the user if a beer is not found
+>>>>>>> 48b84e7cb399b1fbae07f537494c91bfa8e7811f
