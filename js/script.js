@@ -36,18 +36,18 @@ function handleGetData(event) {
     }).then(
         (data) => {
             let $beerlogo = $("#beerlogo")
-            // if ($beerlogo.attr(data[0].image_url === null)){
-            //     return $beerlogo.attr("src", "https://image.freepik.com/free-photo/empty-beer-glass-isolated-white_127657-6823.jpg")
-            // } else {
-            //     return ($beerlogo.attr("src", data[0].image_url))
-            // }
             console.log(data);
             $("#beername").text(data[0].name)
             $("#abv").text(data[0].abv + '%')
             $("#description").text(data[0].description)
             $("#pairing").text(data[0].food_pairing)
-            $beerlogo.attr("src", data[0].image_url);
-            $("#search").val("")
+            // $beerlogo.attr("src", data[0].image_url);
+            $("#search").val("");
+            if (data[0].image_url === null){
+                return $beerlogo.attr("src", "https://image.freepik.com/free-photo/empty-beer-glass-isolated-white_127657-6823.jpg")
+            } else {
+                return ($beerlogo.attr("src", data[0].image_url))
+            }
         },
         (error) => {
             console.log("bad request: ", error),
@@ -67,7 +67,12 @@ function randomize() {
             $("#abv").text(data[0].abv + '%')
             $("#description").text(data[0].description)
             $("#pairing").text(data[0].food_pairing)
-            $("#beerlogo").attr("src", data[0].image_url)
+            $("#beerlogo").attr("src", data[0].image_url);
+            // if (data[0].image_url === null){
+            //     return $beerlogo.attr("src", "https://image.freepik.com/free-photo/empty-beer-glass-isolated-white_127657-6823.jpg")
+            // } else {
+            //     return ($beerlogo.attr("src", data[0].image_url))
+            // }
         }
     )
 }
