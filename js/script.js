@@ -44,7 +44,7 @@ function handleGetData(event) {
             // $beerlogo.attr("src", data[0].image_url);
             $("#search").val("");
             if (data[0].image_url === null){
-                return $beerlogo.attr("src", "https://image.freepik.com/free-photo/empty-beer-glass-isolated-white_127657-6823.jpg")
+                return $beerlogo.attr("src", "https://cdn.pixabay.com/photo/2018/08/21/21/49/beer-3622237_960_720.png")
             } else {
                 return ($beerlogo.attr("src", data[0].image_url))
             }
@@ -69,7 +69,7 @@ function randomize() {
             $("#pairing").text(data[0].food_pairing);
             // $("#beerlogo").attr("src", data[0].image_url);
             if (data[0].image_url === null){
-                return $("#beerlogo").attr("src", "https://image.freepik.com/free-photo/empty-beer-glass-isolated-white_127657-6823.jpg")
+                return $("#beerlogo").attr("src", "https://cdn.pixabay.com/photo/2018/08/21/21/49/beer-3622237_960_720.png")
             } else {
                 return ($("#beerlogo").attr("src", data[0].image_url))
             }
