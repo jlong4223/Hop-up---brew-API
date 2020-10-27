@@ -20,6 +20,8 @@ A simple web application that displays beer information related to the beer that
 ![input](./img/main-screen.png)
 ### After Input:
 ![inputhere](./img/screen-beer.png)
+### Final with Input:
+![final](./img/final.png)
 
 ## Getting Started
 [Click Here](https://jlong4223.github.io/Hop-up---brew-API/) to see the deployed app!

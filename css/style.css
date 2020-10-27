@@ -188,6 +188,8 @@ section {
 
 #forms{
     background: url("https://i.pinimg.com/originals/9c/db/d5/9cdbd55234e303a1693189bc4ddf9702.jpg");
+    /* background-size: cover;
+    background-repeat: no-repeat; */
     width: 100%;
 }
 
