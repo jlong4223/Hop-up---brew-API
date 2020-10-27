@@ -52,7 +52,7 @@ form {
     box-shadow: 1px 1px 12px 3px #74671a;
 }
 #btn:hover, #randombtn:hover {
-    box-shadow: 1px 1px 12px 8px #3e360a;
+    box-shadow: 1px 1px 12px 8px #ffffff;
 }
 
 footer {
@@ -184,4 +184,13 @@ aside {
 
 section {
     margin-right: 100px;
+}
+
+#forms{
+    background: url("https://i.pinimg.com/originals/9c/db/d5/9cdbd55234e303a1693189bc4ddf9702.jpg");
+    width: 100%;
+}
+
+#insideform {
+    background: rgba(0,0,0,0.5);
 }
