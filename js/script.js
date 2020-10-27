@@ -11,11 +11,6 @@ Search beers by name:
 
 `https://sandbox-api.brewerydb.com/v2/beer/${searchText}/?key=203519b93825fa67c097215a92281dc0`
 
-`https://sandbox-api.brewerydb.com/v2/beers/?name=%27murican+Pilsner&key=203519b93825fa67c097215a92281dc0`
-
-search beers by id:
-https://sandbox-api.brewerydb.com/v2/beer/eVgnFV/?key=203519b93825fa67c097215a92281dc0
-*/
 
 /* API number 2
     //with beer name that I used to test data in the console
@@ -27,7 +22,6 @@ https://api.punkapi.com/v2/beers/?beer_name=${searchText}
     //the random endpoint
 https://api.punkapi.com/v2/beers/random 
 */
-
 
 
 console.log("its working!")
@@ -53,7 +47,7 @@ function handleGetData(event) {
             $("#description").text(data[0].description)
             $("#pairing").text(data[0].food_pairing)
             $beerlogo.attr("src", data[0].image_url);
-            // searchText.val("");
+            $("#search").val("")
         },
         (error) => {
             console.log("bad request: ", error),
@@ -78,9 +72,8 @@ function randomize() {
     )
 }
 
+
 //Event listeners
 
 $("#mainsearch").on('submit', handleGetData)
-
-
 $("#random").on('submit', randomize)
