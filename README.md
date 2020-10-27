@@ -32,3 +32,4 @@ A simple web application that displays beer information related to the beer that
  - having a sound for the randomize button
  - having the text stay stationary when an image may be a different size
  - alert the user if a beer is not found
+ - change sizing to fit small screen
