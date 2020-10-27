@@ -1,14 +1,9 @@
 // Google Font- 'Grenze Gotisch'
-
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&display=swap');
-
 //font2
-
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
-
 //font3
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Playfair+Display:ital,wght@1,700&display=swap');
-
 
 :root {
     --shadow-gray-dark: #989898;
@@ -21,14 +16,12 @@
 
 body {
     background-color: white;
-    ;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-header,
-footer {
+header, footer {
     display: flex;
     align-items: center;
     width: 100%;
@@ -54,13 +47,10 @@ form {
     margin-top: 100px;
 }
 
-#btn,
-#randombtn {
+#btn, #randombtn {
     box-shadow: 1px 1px 12px 3px #74671a;
 }
-
-#btn:hover,
-#randombtn:hover {
+#btn:hover, #randombtn:hover {
     box-shadow: 1px 1px 12px 8px #3e360a;
 }
 
@@ -75,7 +65,6 @@ header {
     padding: 0 10px 0 10px;
     height: 130px;
     box-shadow: 1px 1px 12px 5px #74671a;
-    /* border-bottom: 5px dotted #74671a; */
 }
 
 header>h1 {
@@ -84,49 +73,38 @@ header>h1 {
     font-style: italic;
     text-shadow: 1px 1px 8px #808080;
 }
-
+/* ===================Nav elements===================== */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
     text-decoration: none;
     height: 50px;
     width: 100%;
     background-color: #000000;
     border-bottom: 5px dotted #74671a;
 }
-
 nav li {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
     display: inline;
     font-size: 22px;
     padding: 10px;
 }
-
 nav li a {
-    display: inline-flex;
-    justify-content: space-between;
     text-decoration: none;
     color: #ffffff;
     font-family: 'Chivo', sans-serif;
-    padding: 3px 15px 3px 15px;
+    padding: 3px 18px 3px 18px;
     border: 1px solid #000000;
     box-shadow: 1px 1px 12px 3px #74671a;
     border-radius: 10px;
 }
-
 nav li a:hover {
     box-shadow: 1px 1px 12px 3px #ffffff;
 }
+/* ===================Nav elements===================== */
 
 main {
     flex-grow: 1;
-    /* float: right; */
-    /* border: 5px solid green; */
     display: column;
     align-items: center;
     margin-right: 10px;
@@ -138,13 +116,11 @@ main {
     justify-content: center;
     margin-top: 140px;
     height: 100px;
-    /* border: 5px solid yellow; */
 }
 
 #middle {
     display: flex;
     justify-content: center;
-    /* margin: 0 25px 0 25px; */
 }
 
 #bottom {
@@ -168,16 +144,12 @@ main {
 div p {
     color: black;
     font-size: 25px;
-    /* border: 5px solid green;
-    background-color: green; */
-    /* display: flex;
-    flex-wrap: wrap; */
 }
 
 aside {
     float: left;
     margin-left: 10px;
-    margin-right: 50px
+    margin-right: 50px;
 }
 
 #alcohol {
@@ -186,25 +158,13 @@ aside {
     margin-bottom: 40px;
 }
 
-#abv {
-    display: flex;
-    justify-content: center;
-}
-
 #topname {
     display: column;
 }
 
-#beername {
+#beername, #pairing, #abv {
     display: flex;
     justify-content: center;
-}
-
-#pairing {
-    display: flex;
-    justify-content: center;
-    /* border: 5px solid black; */
-    /* width: 65%; */
 }
 
 #infodets {

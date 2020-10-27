@@ -28,3 +28,4 @@ A simple web application that displays beer information related to the beer that
  - the ability to favorite and save beer from local storage
  - connecting to an API with more beers
  - making a beers default image, the image that I have hard coded in
+ - having a sound for the randomize button
