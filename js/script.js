@@ -66,13 +66,13 @@ function randomize() {
             $("#beername").text(data[0].name)
             $("#abv").text(data[0].abv + '%')
             $("#description").text(data[0].description)
-            $("#pairing").text(data[0].food_pairing)
-            $("#beerlogo").attr("src", data[0].image_url);
-            // if (data[0].image_url === null){
-            //     return $beerlogo.attr("src", "https://image.freepik.com/free-photo/empty-beer-glass-isolated-white_127657-6823.jpg")
-            // } else {
-            //     return ($beerlogo.attr("src", data[0].image_url))
-            // }
+            $("#pairing").text(data[0].food_pairing);
+            // $("#beerlogo").attr("src", data[0].image_url);
+            if (data[0].image_url === null){
+                return $("#beerlogo").attr("src", "https://image.freepik.com/free-photo/empty-beer-glass-isolated-white_127657-6823.jpg")
+            } else {
+                return ($("#beerlogo").attr("src", data[0].image_url))
+            }
         }
     )
 }
