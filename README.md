@@ -20,7 +20,7 @@ A simple web application that displays beer information related to the beer that
 ![input](./img/main-screen.png)
 ### After Input:
 ![inputhere](./img/screen-beer.png)
-### Final with Input:
+### Close to Finish with Input:
 ![final](./img/final.png)
 
 ## Getting Started
