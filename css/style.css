@@ -31,7 +31,7 @@ header, footer {
 }
 
 input {
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Chivo', sans-serif;
     border-radius: 12px;
 }
@@ -39,20 +39,25 @@ input {
 form {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-left: 50px;
-    margin-top: 0
+    margin-top: 0;
+    
 }
 
 #mainsearch {
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 #btn, #randombtn {
     box-shadow: 1px 1px 12px 3px #74671a;
+    /* margin-bottom: 5px; */
 }
 #btn:hover, #randombtn:hover {
-    box-shadow: 1px 1px 12px 8px #ffffff;
+    box-shadow: 1px 1px 12px 8px #000000;
+}
+#randombtn {
+    margin-bottom: 0;
 }
 
 footer {
@@ -62,9 +67,13 @@ footer {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    background: url("https://i.pinimg.com/originals/9c/db/d5/9cdbd55234e303a1693189bc4ddf9702.jpg");
+    background-size: cover;
     padding: 0 10px 0 10px;
-    height: 130px;
+    height: 150px;
     box-shadow: 1px 1px 12px 5px #74671a;
 }
 
@@ -83,7 +92,8 @@ nav {
     height: 50px;
     width: 100%;
     background-color: #000000;
-    border-bottom: 5px dotted #74671a;
+    background: rgba(0,0,0,0.6);
+    /* border-bottom: 5px dotted #74671a; */
 }
 nav li {
     display: inline;
@@ -98,6 +108,8 @@ nav li a {
     border: 1px solid #000000;
     box-shadow: 1px 1px 12px 3px #74671a;
     border-radius: 10px;
+    font-size: 18px;
+    /* overflow: hidden; */
 }
 nav li a:hover {
     box-shadow: 1px 1px 12px 3px #ffffff;
@@ -115,7 +127,7 @@ main {
 #top {
     display: column;
     justify-content: center;
-    margin-top: 180px;
+    margin-top: 100px;
     height: 100px;
 }
 
@@ -139,7 +151,6 @@ main {
 
 .input {
     font-family: 'Chivo', sans-serif;
-
 }
 
 div p {
@@ -162,6 +173,9 @@ aside {
     height: 790px; 
     margin-left: 30px;
 }
+#beerlogo:hover{
+    transform: scale(1.5);
+}
 /* recently changed above */
 #alcohol {
     display: column;
@@ -176,10 +190,11 @@ aside {
 #beername, #pairing, #abv {
     display: flex;
     justify-content: center;
+    /* border: 5px solid #74671a; */
 }
 
 #infodets {
-    /* border: 5px solid black; */
+    /* border: 5px solid #74671a; */
 }
 
 section {
@@ -187,12 +202,10 @@ section {
 }
 
 #forms{
-    background: url("https://i.pinimg.com/originals/9c/db/d5/9cdbd55234e303a1693189bc4ddf9702.jpg");
-    /* background-size: cover;
-    background-repeat: no-repeat; */
     width: 100%;
+    margin-top: 0;
 }
 
 #insideform {
-    background: rgba(0,0,0,0.5);
+    border-bottom: 3px dotted #74671a;
 }
