@@ -33,3 +33,4 @@ A simple web application that displays beer information related to the beer that
  - having the text stay stationary when an image may be a different size
  - alert the user if a beer is not found
  - change sizing to fit small screen
+- change navigation menu to hamburger if screen is smaller
