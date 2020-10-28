@@ -127,7 +127,7 @@ main {
 #top {
     display: column;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 20px;
     height: 100px;
 }
 
@@ -155,14 +155,12 @@ main {
 
 div p {
     color: black;
-    font-size: 25px;
+    font-size: 22px;
 }
 /* recently changed below */
 aside {
     float: left;
-    margin-top: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px;
     position: relative;
     width: 530px;
     /* height: 930px; */
