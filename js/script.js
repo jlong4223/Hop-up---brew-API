@@ -1,6 +1,4 @@
-// alert("this is js speaking")
-
-/* API number 2
+/* Beer API 
     //with beer name that I used to test data in the console
 https://api.punkapi.com/v2/beers/?beer_name=choco+Libre
 
@@ -31,7 +29,7 @@ function handleGetData(event) {
             $("#pairing").text(data[0].food_pairing)
             // $beerlogo.attr("src", data[0].image_url);
             $("#search").val("");
-            if (data[0].image_url === null){
+            if (data[0].image_url === null) {
                 return $beerlogo.attr("src", "https://cdn.pixabay.com/photo/2018/08/21/21/49/beer-3622237_960_720.png")
             } else {
                 return ($beerlogo.attr("src", data[0].image_url))
@@ -56,7 +54,7 @@ function randomize() {
             $("#description").text(data[0].description)
             $("#pairing").text(data[0].food_pairing);
             // $("#beerlogo").attr("src", data[0].image_url);
-            if (data[0].image_url === null){
+            if (data[0].image_url === null) {
                 return $("#beerlogo").attr("src", "https://cdn.pixabay.com/photo/2018/08/21/21/49/beer-3622237_960_720.png")
             } else {
                 return ($("#beerlogo").attr("src", data[0].image_url))
@@ -65,8 +63,6 @@ function randomize() {
     )
 }
 
-
 //Event listeners
-
 $("#mainsearch").on('submit', handleGetData)
 $("#random").on('submit', randomize)

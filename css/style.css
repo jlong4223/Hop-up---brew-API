@@ -8,17 +8,21 @@
 :root {
     --shadow-gray-dark: #989898;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
 }
+
 body {
     background-color: white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-header, footer {
+
+header,
+footer {
     display: flex;
     align-items: center;
     width: 100%;
@@ -26,35 +30,45 @@ header, footer {
     background-color: #000000;
     color: #ffffff;
 }
+
 input {
     font-size: 18px;
     font-family: 'Chivo', sans-serif;
     border-radius: 12px;
 }
+
 form {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
     margin-left: 50px;
-    margin-top: 0;   
+    margin-top: 0;
 }
+
 #mainsearch {
     margin-top: 20px;
 }
-#btn, #randombtn {
+
+#btn,
+#randombtn {
     box-shadow: 1px 1px 12px 3px #74671a;
 }
-#btn:hover, #randombtn:hover {
+
+#btn:hover,
+#randombtn:hover {
     box-shadow: 1px 1px 12px 8px #000000;
 }
+
 #randombtn {
     margin-bottom: 0;
 }
+
 footer {
     justify-content: center;
     font-family: 'Playfair Display', serif;
     height: 50px;
 }
+
 header {
     display: flex;
     flex-direction: column;
@@ -65,12 +79,14 @@ header {
     height: 150px;
     box-shadow: 1px 1px 12px 5px #74671a;
 }
+
 header>h1 {
     font-size: 65px;
     font-family: 'Playfair Display', serif;
     font-style: italic;
     text-shadow: 1px 1px 8px #808080;
 }
+
 /* ===================Nav elements===================== */
 nav {
     display: flex;
@@ -80,13 +96,15 @@ nav {
     height: 50px;
     width: 100%;
     background-color: #000000;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
 }
+
 nav li {
     display: inline;
     font-size: 22px;
     padding: 10px;
 }
+
 nav li a {
     text-decoration: none;
     color: #ffffff;
@@ -98,10 +116,12 @@ nav li a {
     font-size: 18px;
     /* overflow: hidden; */
 }
+
 nav li a:hover {
     box-shadow: 1px 1px 12px 3px #ffffff;
 }
 /* ===================Nav elements===================== */
+
 main {
     flex-grow: 1;
     display: column;
@@ -109,67 +129,84 @@ main {
     margin-right: 10px;
     margin-left: 10px;
 }
+
 #top {
     display: column;
     justify-content: center;
     margin-top: 20px;
     height: 100px;
 }
+
 #middle {
     display: flex;
     justify-content: center;
 }
+
 #bottom {
     margin-top: 70px;
     display: column;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .words {
     text-decoration: underline;
     text-align: center;
     font-family: 'Chivo', sans-serif;
 }
+
 .input {
     font-family: 'Chivo', sans-serif;
 }
+
 div p {
     color: black;
     font-size: 22px;
 }
+
 aside {
     float: left;
     margin: 10px;
     position: relative;
     width: 530px;
 }
+
 #beerlogo {
-    height: 790px; 
+    height: 790px;
     margin-left: 30px;
 }
-#beerlogo:hover{
+
+#beerlogo:hover {
     transform: scale(1.5);
 }
+
 #alcohol {
     display: column;
     justify-content: center;
     margin-bottom: 40px;
 }
+
 #topname {
     display: column;
 }
-#beername, #pairing, #abv {
+
+#beername,
+#pairing,
+#abv {
     display: flex;
     justify-content: center;
     /* border: 5px solid #74671a; */
 }
+
 section {
     margin-right: 100px;
 }
-#forms{
+
+#forms {
     width: 100%;
     margin-top: 0;
 }
+
 #insideform {
     border-bottom: 3px dotted #74671a;
 }
